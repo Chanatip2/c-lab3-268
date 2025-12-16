@@ -4,8 +4,9 @@ int main(){
 	int score;
 	
 	scanf("%d",&score);
-	
-	if (score >= 68){
+	if (score < 0 || score > 100) {
+		printf("Error\n");
+	} else if (score >= 68){
 		if (score >= 85){
 			printf("A");
 		} else if (score >= 75){
@@ -23,4 +24,5 @@ int main(){
 	}
 	return 0;
 }
+
 
