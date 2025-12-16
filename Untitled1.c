@@ -11,7 +11,8 @@ int main(){
 		} else if (score >= 75){
 			printf("B");
 		} else if (score >= 65){
-			printf("C");	
+			printf("C\n");
+			printf("You need %d more points to Get B.\n",75 - score);
 		}
 	} else {
 		if (score >= 55){
@@ -22,3 +23,4 @@ int main(){
 	}
 	return 0;
 }
+
